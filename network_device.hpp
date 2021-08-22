@@ -1,29 +1,62 @@
+#include <network/ip/tcp/tcp_operation.hpp>
 
 namespace network {
-    
-    template <typename T>
-    concept bool NetworkTyped = 
-    {
-        typename T::send_size;
-        typename T::send_type;
+namespace ip      {
 
-        typename T::recv_size;
-        typename T::recv_type;
-        typename T::res_size ;
+    enum  network_error
+    {
+        socket_creation = (1 << 0),
+        socket_send     = (1 << 1),
+        socket_receive  = (1 << 2)
     };
 
-    template <NetworkTyped T>
-    concept bool Sendable      = requires(T n, T::io_type c, T::send_size s) { n.send(c, s); };
+    template <typename send_t, typename recv_t, typename operation>
+    class network_device
+    {
+    public:
+        using handle_type  = operation::network_handle_type;
+        using address_type = operation::network_address_type;
+        
+        using send_size    = operation::network_send_size;
+        using send_type    = std::conditional_t<std::is_array_v<send_t>, std::remove_extent_t<send_t>, std::remove_pointer_t<send_t>>;
 
-    template <NetworkTyped T>
-    concept bool Receivable    = requires(T n, T::io_type c, T::recv_size s) { n.recv(c, s); };
+        using recv_size    = opreation::network_recv_size;
+        using recv_type    = std::conditional_t<std::is_array_v<recv_t>, std::remove_extent_t<recv_t>, std::remove_pointer_t<recv_t>>;
 
-    template <typename T>
-    concept bool NetworkDevice = NetworkTyped<T> && Sendable<T> && Receivable<T>;
+        using res_size     = operation::network_res_size ;
+        using ret_type     = operation::network_ret_size ;
 
-    template <NetworkDevice network_device>
-    typename network_device::res_size send_to  (NetworkDevice& n, typename network_device::io_type* t, typename network_device::send_size s) { n.send(t, s); }
+    
+    public:
+        network_device(address_type& addr)
+            : networking_handle(operation::network_open()) { }
 
-    template <NetworkDevice network_device>
-    typename network_device::res_size recv_from(NetworkDevice& n, typename network_device::io_type* t, typename network_device::recv_size s) { n.recv(t, s); }
+        ret_size connect   () { return operation::network_connect   (networking_handle, networking_address); }
+        void     disconnect() {        operation::network_disconnect(networking_handle)                    ; }
+    
+    public:
+        res_size send      (send_type& context, send_size size)
+        {
+            ret_size     = operation::network_send(&context, size);
+            if(ret_size == operation::network_send_error)
+                networking_error |= network_error::sock_send;
+
+            return ret_size;
+        }
+
+        res_size recv      (recv_type& context, recv_size size)
+        {
+            ret_size     = operation::network_recv(&context, size);
+            if(ret_size == operation::network_recv_error)
+                networking_error |= network_error::sock_recv;
+
+            return ret_size;
+        }
+
+    protected:
+        handle_type   networking_handle ;
+        address_type  networking_address;
+        network_error networking_error  ;
+    };
+}
 }
