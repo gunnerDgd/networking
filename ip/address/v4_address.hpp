@@ -35,7 +35,7 @@ network::ip::v4::v4(sockaddr_in& v4_addr)
 network::ip::v4::v4(std::string v4_addr, uint16_t v4_port)
 {
     ipv4_address_context.sin_addr.s_addr = inet_addr(v4_addr.c_str());
-    ipv4_address_context.sin_port        = htons(v4_port);
+    ipv4_address_context.sin_port        = htons    (v4_port);
     ipv4_address_context.sin_family      = AF_INET;
 }
 
