@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\tcp">
+      <UniqueIdentifier>{31dc17a8-41f5-4fd1-8dad-edaf7cbf4c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tcp\details">
+      <UniqueIdentifier>{fe3edbfa-38ce-4995-9e24-07fc2abab7b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tcp">
+      <UniqueIdentifier>{25817465-4593-4c1b-9a02-4d9c03ccefce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tcp\details">
+      <UniqueIdentifier>{7d902ad0-0a0d-44ff-a0b1-991dd2f09b09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_type.h">
+      <Filter>Header Files\tcp\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_init.h">
+      <Filter>Header Files\tcp\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_io.h">
+      <Filter>Header Files\tcp\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_io_exec.h">
+      <Filter>Header Files\tcp\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_type.h">
+      <Filter>Header Files\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_init.h">
+      <Filter>Header Files\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_io.h">
+      <Filter>Header Files\tcp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_io_exec.c">
+      <Filter>Source Files\tcp\details</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_io.c">
+      <Filter>Source Files\tcp\details</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_init.c">
+      <Filter>Source Files\tcp\details</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\tcp_init.c">
+      <Filter>Source Files\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\tcp_io.c">
+      <Filter>Source Files\tcp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

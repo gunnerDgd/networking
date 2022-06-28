@@ -1,0 +1,13 @@
+﻿  networking_tcp_init.c
+E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_init.c(37,32): warning C4267: '=': conversion from 'size_t' to 'ULONG', possible loss of data
+E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_init.c(54,29): warning C4267: '=': conversion from 'size_t' to 'ULONG', possible loss of data
+  networking_tcp_io.c
+E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io.c(33,37): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io.c(41,37): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  networking_tcp_io_exec.c
+E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io_exec.c(31,1): warning C4133: 'initializing': incompatible types - from 'LPWSAOVERLAPPED' to '__synapse_networking_tcp_io_request *'
+E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io_exec.c(44,1): warning C4133: 'initializing': incompatible types - from 'LPWSAOVERLAPPED' to '__synapse_networking_tcp_io_request *'
+  tcp_init.c
+  tcp_io.c
+  Generating Code...
+  synapse-networking-tcp.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-networking\libs\x64\debug\protocol\tcp\synapse-networking-tcp.lib
