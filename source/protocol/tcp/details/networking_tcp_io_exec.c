@@ -33,8 +33,13 @@ __synapse_networking_tcp_do_recv_from
 	synapse_execution_sched_traits      *ptr_tcp_sched
 		= ptr_tcp_ioreq->ioreq_tcp_hnd->hnd_tcp_sched;
 
-	ptr_tcp_sched->dispatch_from_proc
-		(ptr_tcp_sched->hnd_sched, &__do_recv_from, pAioHnd);
+	if(pTransfer != -1)
+		ptr_tcp_sched->dispatch_from_proc
+			(ptr_tcp_sched->hnd_sched, &__do_recv_from, pAioHnd);
+	else
+		ptr_tcp_sched->dispatch_from_proc
+			(ptr_tcp_sched->hnd_sched, 
+			 ptr_tcp_ioreq->ioreq_tcp_hnd->tcp_aio_disconnected, NULL);
 }
 
 void

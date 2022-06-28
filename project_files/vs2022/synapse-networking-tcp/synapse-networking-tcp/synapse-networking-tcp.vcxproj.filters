@@ -48,6 +48,12 @@
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_io.h">
       <Filter>Header Files\tcp</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_conn.h">
+      <Filter>Header Files\tcp\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_conn.h">
+      <Filter>Header Files\tcp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_io_exec.c">
@@ -63,6 +69,12 @@
       <Filter>Source Files\tcp</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\source\protocol\tcp\tcp_io.c">
+      <Filter>Source Files\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_conn.c">
+      <Filter>Source Files\tcp\details</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\tcp_conn.c">
       <Filter>Source Files\tcp</Filter>
     </ClCompile>
   </ItemGroup>
