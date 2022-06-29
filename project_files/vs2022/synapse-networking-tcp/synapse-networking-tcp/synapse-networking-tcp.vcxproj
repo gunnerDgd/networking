@@ -24,6 +24,7 @@
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_io.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_io_exec.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_type.h" />
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_conn.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_init.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_io.h" />
@@ -60,7 +61,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -92,7 +93,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>E:\Programming\C++\Projects\Experimental\synapse-execution\include;E:\Programming\C++\Projects\Experimental\synapse-networking\include;$(IncludePath)</IncludePath>
-    <OutDir>E:\Programming\C++\Projects\Experimental\synapse-networking\libs\x64\debug\protocol\tcp\</OutDir>
+    <OutDir>E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -142,6 +143,7 @@
       <SubSystem>
       </SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

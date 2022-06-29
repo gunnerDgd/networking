@@ -12,8 +12,6 @@ typedef struct __synapse_networking_tcp
 	SOCKET		  hnd_tcp	 ;
 	synapse_execution_sched_traits*
 			      hnd_tcp_sched;
-	void*
-				  hnd_tcp_param;
 
 	synapse_networking_tcp_connected    
 		tcp_aio_connected   ;

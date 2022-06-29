@@ -64,20 +64,3 @@ synapse_networking_tcp_io_request_cleanup
 	__synapse_networking_tcp_io_request_cleanup
 		(synapse_networking_opaque_reference(pIoReq));
 }
-
-void
-synapse_networking_tcp_assign_parameter
-	(synapse_networking_tcp pTcp, void* pParam)
-{
-	synapse_networking_opaque_cast
-		(pTcp, __synapse_networking_tcp*)->hnd_tcp_param = pParam;
-}
-
-void*
-synapse_networking_tcp_retrieve_parameter
-	(synapse_networking_tcp pTcp)
-{
-	return
-		synapse_networking_opaque_cast
-			(pTcp, __synapse_networking_tcp*)->hnd_tcp_param;
-}

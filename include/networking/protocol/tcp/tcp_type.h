@@ -1,6 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <networking/defines/opaque/opaque.h>
+#include <networking/defines/export.h>
 
 #include <execution/traits/sched/sched_traits.h>
 

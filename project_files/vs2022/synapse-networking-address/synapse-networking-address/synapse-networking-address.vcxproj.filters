@@ -13,21 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\v4">
+      <UniqueIdentifier>{38432c5e-a160-4285-aef3-7d78909f9b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\v4\details">
+      <UniqueIdentifier>{30cb4a3a-26c7-4425-930b-e79fa700d168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\v4">
+      <UniqueIdentifier>{8ee62cf7-3c58-4d27-a4b7-132a5eeb0f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\v4\details">
+      <UniqueIdentifier>{bf005489-2a6f-4b07-ac17-10d7538e9ca4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\..\include\networking\address\v4\details\networking_address_v4_type.h">
+      <Filter>Header Files\v4\details</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\..\include\networking\address\v4\details\networking_address_v4.h">
+      <Filter>Header Files\v4\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\address\v4\address_v4_type.h">
+      <Filter>Header Files\v4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\address\v4\address_v4.h">
+      <Filter>Header Files\v4</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="synapse-networking-address.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\..\source\address\v4\details\networking_address_v4.c">
+      <Filter>Source Files\v4\details</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\..\source\address\v4\address_v4.c">
+      <Filter>Source Files\v4</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

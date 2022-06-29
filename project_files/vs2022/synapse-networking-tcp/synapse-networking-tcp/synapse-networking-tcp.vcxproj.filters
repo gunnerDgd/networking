@@ -54,6 +54,9 @@
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_conn.h">
       <Filter>Header Files\tcp</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp.h">
+      <Filter>Header Files\tcp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_io_exec.c">

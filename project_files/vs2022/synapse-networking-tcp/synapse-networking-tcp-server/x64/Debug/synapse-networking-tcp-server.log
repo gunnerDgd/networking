@@ -5,4 +5,5 @@ E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\
   tcp_server_accept.c
   tcp_server_init.c
   Generating Code...
-  synapse-networking-tcp-server.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-networking\libs\x64\debug\protocol\tcp\synapse-networking-tcp-server.lib
+     Creating library E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\synapse-networking-tcp-server.lib and object E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\synapse-networking-tcp-server.exp
+  synapse-networking-tcp-server.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\synapse-networking-tcp-server.dll
