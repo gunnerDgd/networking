@@ -1,8 +1,4 @@
-﻿  networking_tcp_server_acpt.c
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\server\networking_tcp_server_acpt.c(17,46): warning C4133: 'function': incompatible types - from 'SOCKADDR_IN *' to 'sockaddr *'
-  networking_tcp_server_init.c
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\server\networking_tcp_server_init.c(32,18): warning C4133: 'function': incompatible types - from 'SOCKADDR_IN *' to 'const sockaddr *'
-  tcp_server_accept.c
+﻿  tcp_server_accept.c
   tcp_server_init.c
   Generating Code...
   synapse-networking-tcp-server.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\synapse-networking-tcp-server.dll

@@ -1,6 +1,7 @@
 #include <networking/protocol/tcp/tcp_type.h>
 #include <networking/protocol/tcp/details/networking_tcp_init.h>
 
+synapse_networking_tcp_dll
 synapse_networking_tcp
 synapse_networking_tcp_initialize_v4
 	(synapse_networking_tcp_connected    pTcpConn, 
@@ -14,8 +15,7 @@ synapse_networking_tcp_initialize_v4
 		ptr_tcp;
 }
 
-
-
+synapse_networking_tcp_dll
 void
 synapse_networking_tcp_cleanup
 	(synapse_networking_tcp pTcp)

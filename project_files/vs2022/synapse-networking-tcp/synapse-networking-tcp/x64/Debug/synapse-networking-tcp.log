@@ -1,2 +1,9 @@
-﻿  tcp_io.c
+﻿  networking_tcp_io.c
+  networking_tcp_io_exec.c
+E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io_exec.c(29,1): warning C4133: 'initializing': incompatible types - from 'LPWSAOVERLAPPED' to '__synapse_networking_tcp_io_request *'
+E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io_exec.c(39,1): warning C4133: 'initializing': incompatible types - from 'LPWSAOVERLAPPED' to '__synapse_networking_tcp_io_request *'
+  tcp_io_request.c
+  tcp_conn.c
+  tcp_io.c
+  Generating Code...
   synapse-networking-tcp.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\synapse-networking-tcp.dll

@@ -16,15 +16,51 @@
     <Filter Include="Header Files\export">
       <UniqueIdentifier>{3dd8cd46-453f-4ebd-a513-f08cb8fc6148}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\export\protocol">
+      <UniqueIdentifier>{f7e2577d-ddfe-4cd7-a593-684f2211d094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\export\protocol\tcp">
+      <UniqueIdentifier>{67d045ab-a5b3-4f69-a610-1f73fb9384b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\export">
+      <UniqueIdentifier>{feb18aaf-cca0-45ce-a886-67ab96d5ec01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\export\protocol">
+      <UniqueIdentifier>{330aafc8-6e20-42c1-b92f-201d741c4cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\export\protocol\tcp">
+      <UniqueIdentifier>{86813b27-9ee3-44f8-b624-217418617344}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\include\networking\module\main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\module\export\protocol\tcp\tcp.h">
+      <Filter>Header Files\export\protocol\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\module\tcp_module_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\module\export\protocol\tcp\tcp_io_request.h">
+      <Filter>Header Files\export\protocol\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\module\export\protocol\tcp\tcp_server_v4.h">
+      <Filter>Header Files\export\protocol\tcp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\source\module\main.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\module\export\protocol\tcp\tcp.c">
+      <Filter>Source Files\export\protocol\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\module\export\protocol\tcp\tcp_io_request.c">
+      <Filter>Source Files\export\protocol\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\module\export\protocol\tcp\tcp_server_v4.c">
+      <Filter>Source Files\export\protocol\tcp</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

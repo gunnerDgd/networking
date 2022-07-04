@@ -17,10 +17,10 @@ __synapse_networking_tcp_initialize_v4
 	ptr_tcp->tcp_aio_connected.ptr_onconn_routine
 		= pTcpConn.ptr_onconn_routine;
 
-	ptr_tcp->tcp_aio_disconnected.ptr_onconn_parameter
-		= pTcpDisconn.ptr_onconn_parameter;
-	ptr_tcp->tcp_aio_disconnected.ptr_onconn_routine
-		= pTcpDisconn.ptr_onconn_routine;
+	ptr_tcp->tcp_aio_disconnected.ptr_ondisconn_parameter
+		= pTcpDisconn.ptr_ondisconn_parameter;
+	ptr_tcp->tcp_aio_disconnected.ptr_ondisconn_routine
+		= pTcpDisconn.ptr_ondisconn_routine;
 
 	return ptr_tcp;
 }

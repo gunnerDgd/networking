@@ -1,6 +1,7 @@
 #include <networking/protocol/tcp/io_request/tcp_io_request.h>
 #include <networking/protocol/tcp/details/io_request/networking_tcp_io_request.h>
 
+synapse_networking_tcp_dll
 synapse_networking_tcp_io_request
 synapse_networking_tcp_io_request_initialize
 	(void							  *pTcpIoPtr ,
@@ -17,6 +18,7 @@ synapse_networking_tcp_io_request_initialize
 		ptr_ioreq;
 }
 
+synapse_networking_tcp_dll
 synapse_networking_tcp_io_request
 synapse_networking_tcp_io_request_initialize_from_existing
 	(synapse_networking_tcp_io_request pIoReq	 ,
@@ -34,6 +36,7 @@ synapse_networking_tcp_io_request_initialize_from_existing
 		pIoReq;
 }
 
+synapse_networking_tcp_dll
 void
 synapse_networking_tcp_io_request_cleanup
 	(synapse_networking_tcp_io_request pIoReq)
