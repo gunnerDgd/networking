@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\networking\defines\export.h" />
     <ClInclude Include="..\..\..\..\include\networking\defines\opaque\opaque.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

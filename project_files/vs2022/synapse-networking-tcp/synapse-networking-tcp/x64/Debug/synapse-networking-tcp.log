@@ -1,18 +1,2 @@
-﻿  networking_tcp_conn.c
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_conn.c(8,48): warning C4133: 'function': incompatible types - from 'SOCKADDR_IN *' to 'const sockaddr *'
-  networking_tcp_init.c
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_init.c(37,32): warning C4267: '=': conversion from 'size_t' to 'ULONG', possible loss of data
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_init.c(54,29): warning C4267: '=': conversion from 'size_t' to 'ULONG', possible loss of data
-  networking_tcp_io.c
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io.c(33,37): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io.c(41,37): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
-  networking_tcp_io_exec.c
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io_exec.c(42,55): warning C4113: 'synapse_networking_tcp_disconnected' differs in parameter lists from 'void (__cdecl *)(void *)'
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io_exec.c(31,1): warning C4133: 'initializing': incompatible types - from 'LPWSAOVERLAPPED' to '__synapse_networking_tcp_io_request *'
-E:\Programming\C++\Projects\Experimental\synapse-networking\source\protocol\tcp\details\networking_tcp_io_exec.c(49,1): warning C4133: 'initializing': incompatible types - from 'LPWSAOVERLAPPED' to '__synapse_networking_tcp_io_request *'
-  tcp_conn.c
-  tcp_init.c
-  tcp_io.c
-  Generating Code...
-     Creating library E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\synapse-networking-tcp.lib and object E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\synapse-networking-tcp.exp
+﻿  tcp_io.c
   synapse-networking-tcp.vcxproj -> E:\Programming\C++\Projects\Experimental\synapse-networking\bin\x64\debug\synapse-networking-tcp.dll

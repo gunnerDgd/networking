@@ -1,7 +1,11 @@
 #pragma once
 
 #define synapse_networking_opaque_declare(pName)\
-	typedef struct pName { void* opaque; } pName;
+	typedef struct pName		\
+	{							\
+		void* opaque;			\
+		void* opaque_additional;\
+	} pName;
 
 #define synapse_networking_opaque_reference(pName)\
 	(pName.opaque)

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "synapse-networking", "synapse-networking\synapse-networking.vcxproj", "{892D184B-669A-4CFE-9EBC-1070DD89C0EC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "synapse-networking-module", "synapse-networking-module\synapse-networking-module.vcxproj", "{EE6F3245-2863-4794-8629-8E14481DEBDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{892D184B-669A-4CFE-9EBC-1070DD89C0EC}.Release|x64.Build.0 = Release|x64
 		{892D184B-669A-4CFE-9EBC-1070DD89C0EC}.Release|x86.ActiveCfg = Release|Win32
 		{892D184B-669A-4CFE-9EBC-1070DD89C0EC}.Release|x86.Build.0 = Release|Win32
+		{EE6F3245-2863-4794-8629-8E14481DEBDB}.Debug|x64.ActiveCfg = Debug|x64
+		{EE6F3245-2863-4794-8629-8E14481DEBDB}.Debug|x64.Build.0 = Debug|x64
+		{EE6F3245-2863-4794-8629-8E14481DEBDB}.Debug|x86.ActiveCfg = Debug|Win32
+		{EE6F3245-2863-4794-8629-8E14481DEBDB}.Debug|x86.Build.0 = Debug|Win32
+		{EE6F3245-2863-4794-8629-8E14481DEBDB}.Release|x64.ActiveCfg = Release|x64
+		{EE6F3245-2863-4794-8629-8E14481DEBDB}.Release|x64.Build.0 = Release|x64
+		{EE6F3245-2863-4794-8629-8E14481DEBDB}.Release|x86.ActiveCfg = Release|Win32
+		{EE6F3245-2863-4794-8629-8E14481DEBDB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,9 +4,12 @@ bool
 __synapse_networking_tcp_connect_v4
 	(__synapse_networking_tcp* pTcp, __synapse_networking_address_v4* pV4Addr)
 {
+	pTcp->hnd_tcp_addr_v4
+		= *pV4Addr;
 	return
-		(connect(pTcp->hnd_tcp, &pV4Addr->hnd_v4_addr, sizeof(SOCKADDR_IN)) == 0)
-			? true : false;
+		(connect(pTcp->hnd_tcp, 
+			    &pTcp->hnd_tcp_addr_v4,
+			     sizeof(SOCKADDR_IN)) == 0) ? true : false;
 }
 
 void

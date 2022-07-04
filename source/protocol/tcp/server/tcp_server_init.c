@@ -3,14 +3,13 @@
 
 synapse_networking_tcp_server
 synapse_networking_tcp_server_initialize_v4
-	(synapse_execution_sched_traits*	 pSched, 
-	 synapse_networking_tcp_connected    pCliInitConn,
-	 synapse_networking_tcp_disconnected pCliInitDisconn)
+	(synapse_networking_tcp_server_connected pCliInitConn,
+		synapse_networking_tcp_disconnected  pCliInitDisconn)
 {
 	synapse_networking_opaque_init
 		(synapse_networking_tcp_server, ptr_tcp_srv,
 			__synapse_networking_tcp_server_initialize_v4
-				(pSched, pCliInitConn, pCliInitDisconn));
+				(pCliInitConn, pCliInitDisconn));
 
 	return
 		ptr_tcp_srv;

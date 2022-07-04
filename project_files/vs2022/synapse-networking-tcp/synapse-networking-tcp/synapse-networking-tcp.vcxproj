@@ -19,11 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\io_request\networking_tcp_io_request.h" />
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\io_request\networking_tcp_io_request_type.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_conn.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_init.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_io.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_io_exec.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\details\networking_tcp_type.h" />
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\io_request\tcp_io_request.h" />
+    <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\io_request\tcp_io_request_type.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_conn.h" />
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_init.h" />
@@ -31,10 +35,12 @@
     <ClInclude Include="..\..\..\..\include\networking\protocol\tcp\tcp_type.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\details\io_request\networking_tcp_io_request.c" />
     <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_conn.c" />
     <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_init.c" />
     <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_io.c" />
     <ClCompile Include="..\..\..\..\source\protocol\tcp\details\networking_tcp_io_exec.c" />
+    <ClCompile Include="..\..\..\..\source\protocol\tcp\io_request\tcp_io_request.c" />
     <ClCompile Include="..\..\..\..\source\protocol\tcp\tcp_conn.c" />
     <ClCompile Include="..\..\..\..\source\protocol\tcp\tcp_init.c" />
     <ClCompile Include="..\..\..\..\source\protocol\tcp\tcp_io.c" />

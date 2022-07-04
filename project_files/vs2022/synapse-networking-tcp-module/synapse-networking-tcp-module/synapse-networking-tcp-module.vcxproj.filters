@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\networking">
+      <UniqueIdentifier>{d4863d3e-1f8f-4470-8d42-433a4f4801ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\networking\protocol">
+      <UniqueIdentifier>{1a1fdb8d-1005-4b1f-84ad-28f67220fdc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\networking\protocol\tcp">
+      <UniqueIdentifier>{518ac447-df6b-467d-a94d-a62d826545b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\protocol">
+      <UniqueIdentifier>{c26eeca3-8eda-4bb9-aba8-fb67e20bae8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\protocol\tcp">
+      <UniqueIdentifier>{db228dcc-c35e-4de6-88dc-c050a674838c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\synapse-sdk\include\synapse\networking\protocol\tcp\tcp.h">
+      <Filter>Header Files\networking\protocol\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\synapse-sdk\include\synapse\networking\protocol\tcp\tcp_io_request.h">
+      <Filter>Header Files\networking\protocol\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\synapse-sdk\include\synapse\networking\protocol\tcp\tcp_type.h">
+      <Filter>Header Files\networking\protocol\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\module\tcp_module_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\module\source\protocol\tcp\tcp.c">
+      <Filter>Source Files\protocol\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\module\source\protocol\tcp\tcp_io_request.c">
+      <Filter>Source Files\protocol\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\module\source\tcp_module_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

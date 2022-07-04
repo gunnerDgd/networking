@@ -21,5 +21,8 @@
     <ClInclude Include="..\..\..\..\include\networking\defines\opaque\opaque.h">
       <Filter>Header Files\opaque</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\include\networking\defines\export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

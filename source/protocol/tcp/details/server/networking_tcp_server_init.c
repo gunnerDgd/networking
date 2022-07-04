@@ -3,22 +3,21 @@
 
 __synapse_networking_tcp_server*
 __synapse_networking_tcp_server_initialize_v4
-	(synapse_execution_sched_traits		    *pSrvExec       ,
-	 synapse_networking_tcp_connected		 pCliInitConn   ,
-	 synapse_networking_tcp_disconnected	 pCliInitDisconn)
+	(synapse_networking_tcp_server_connected pCliInitConn   ,
+	 synapse_networking_tcp_disconnected     pCliInitDisconn)
 {
 	__synapse_networking_tcp_server* ptr_srv
 		= malloc(sizeof(__synapse_networking_tcp_server));
 
-	ptr_srv->tcp_cli_init_conn
-		= pCliInitConn;
+	ptr_srv->tcp_cli_init_conn.evt_handler
+		= pCliInitConn.evt_handler;
+	ptr_srv->tcp_cli_init_conn.evt_handler_param
+		= pCliInitConn.evt_handler_param;
 	ptr_srv->tcp_cli_init_disconn
 		= pCliInitDisconn;
 
 	ptr_srv->hnd_tcp_srv
 		= socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-	ptr_srv->tcp_srv_exec
-		= pSrvExec;
 
 	return ptr_srv;
 }

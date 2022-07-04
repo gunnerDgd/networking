@@ -1,0 +1,9 @@
+﻿  tcp_server.c
+E:\Programming\C++\Projects\Experimental\synapse-networking\module\source\protocol\tcp\server\tcp_server.c(12,1): warning C4113: 'synapse_tcp_on_connected' differs in parameter lists from 'synapse_networking_tcp_connected'
+E:\Programming\C++\Projects\Experimental\synapse-networking\module\source\protocol\tcp\server\tcp_server.c(12,1): warning C4113: 'synapse_tcp_on_disconnected' differs in parameter lists from 'synapse_networking_tcp_disconnected'
+  tcp_server_accept.c
+E:\Programming\C++\Projects\Experimental\synapse-networking\include\networking\address\v4\address_v4_type.h(6,1): error C2011: 'synapse_networking_address_v4': 'struct' type redefinition
+E:\Programming\C++\Projects\Experimental\synapse-sdk\include\synapse\networking\address\v4\address_v4_type.h(5): message : see declaration of 'synapse_networking_address_v4'
+  tcp_server_module_main.c
+E:\Programming\C++\Projects\Experimental\synapse-networking\module\source\tcp_server_module_main.c(14,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...

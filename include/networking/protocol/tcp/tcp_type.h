@@ -3,17 +3,21 @@
 #include <networking/defines/opaque/opaque.h>
 #include <networking/defines/export.h>
 
-#include <execution/traits/sched/sched_traits.h>
-
 synapse_networking_opaque_declare
 	(synapse_networking_tcp);
 
-synapse_networking_opaque_declare
-	(synapse_networking_tcp_io_request);
+typedef struct synapse_networking_tcp_connected
+{
+	void
+		(*ptr_onconn_routine)(void*);
+	void*
+		  ptr_onconn_parameter;
+} synapse_networking_tcp_connected;
 
-typedef
-	void(*synapse_networking_tcp_connected)   (synapse_networking_tcp);
-typedef
-	void(*synapse_networking_tcp_disconnected)(synapse_networking_tcp);
-typedef
-	void(*synapse_networking_tcp_completion)  (synapse_networking_tcp, size_t);
+typedef struct synapse_networking_tcp_disconnected
+{
+	void
+		(*ptr_ondisconn_routine)(void*);
+	void*
+		  ptr_ondisconn_parameter;
+} synapse_networking_tcp_disconnected;
