@@ -1,8 +1,20 @@
 #pragma once
 #include <stdint.h>
-#include <WinSock2.h>
+#include <stddef.h>
 
-typedef struct __synapse_networking_address_v4
+typedef struct 
+	__synapse_networking_address_v4
 {
-	SOCKADDR_IN hnd_v4_addr;
+	union
+	{
+		uint8_t 
+			proto_addr_v4[4];
+		uint32_t
+			proto_addr_v4_int;
+	};
+	uint16_t
+		proto_port;
 } __synapse_networking_address_v4;
+
+#define __synapse_networking_address_v4_size 4
+#define __synapse_networking_address_v4_port_size sizeof(uint16_t)
